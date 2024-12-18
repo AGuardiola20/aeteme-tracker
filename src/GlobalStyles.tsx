@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
   h4,
   h5,
   a,
+  p,
   div{
     margin: 0;
     padding:0;
