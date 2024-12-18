@@ -4,12 +4,15 @@ import { ThemeProvider } from "styled-components";
 import App from "./App.tsx";
 import { lightTheme } from "./theme.ts";
 import GlobalStyles from "./GlobalStyles.tsx";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={lightTheme}>
-      <GlobalStyles />
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyles />
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>
 );

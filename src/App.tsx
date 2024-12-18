@@ -1,8 +1,11 @@
+import { Route, Routes } from "react-router";
+import Home from "./screens/Home";
+
 function App() {
   return (
-    <>
-      <h1>Aeteme Tracker</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
